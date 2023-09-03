@@ -1,0 +1,66 @@
+@font-face {
+    font-family: "Amatic SC";
+    src: url("../fonts/Amatic\ SC/AmaticSC-Regular.ttf");
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 20vh;
+    width: 100%;
+
+    overflow: hidden;
+
+    color: peru;
+}
+
+header .logoContainer {
+    width: 200px;
+    max-height: 200px;
+    margin-right: 30px;
+}
+  
+header .logoContainer img {
+    width: 100%;
+    height: auto;
+}
+
+nav {
+    font-family: "Amatic SC", cursive;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 15px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+    text-transform: uppercase;
+    font-weight: bold;
+
+    margin-right: 200px;
+    width: 100%;
+    cursor: pointer;
+}
+
+nav ul li {
+    padding-right: 50px;
+}
+
+nav ul li i {
+    margin-right: 10px;
+    color: peru;
+}
+
+nav ul li a {
+    color: peru;
+}
+
+nav ul li a:hover {
+    color: #7A9D54;
+    transition: 0.3s ease-in-out;
+}

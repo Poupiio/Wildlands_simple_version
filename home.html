@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildlands</title>
+    <link rel="shortcut icon" href="assets/img/1.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <header>
+        <div class="logoContainer">
+            <img src="assets/img/1.png" alt="Logo Wildlands" />
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <i class="fa-solid fa-house"></i>
+                    <a href="home.html">Accueil</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-truck-pickup"></i>
+                    <a href="safaris.html">Safaris</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-paw"></i>
+                    <a href="species.html">Faune</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-image"></i>
+                    <a href="gallery.html">Galerie</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="contact.html">Contact</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-user"></i>
+                    <a href="login.html">Connexion</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="banner">
+            <h1>Bienvenue dans la réserve <span id="title">Wildlands</span> <i class="fa-solid fa-paw paw-banner"></i>
+            </h1>
+        </section>
+
+        <section id="presentation">
+            <p>Située en Afrique du Sud, en plein cœur de la savane, la réserver Wildlands est connue pour
+                abriter les "Big Five" de l'Afrique, c'est-à-dire le lion, l'éléphant, le rhinocéros, le buffle et le
+                léopard. La réserve est également habitée par de nombreuses autres espèces animales, comme les girafes,
+                les antilopes, les hyènes et les crocodiles.</p>
+            <button id="discover-species" onclick="redirectToSpeciesPage()">Les découvrir</button>
+            <p>Venez explorer la réserve en 4x4, en compagnie de guides locaux expérimentés qui connaissent bien
+                les animaux et leur habitat. Participez également à des programmes de conservation et de
+                recherche menés par des scientifiques professionnels.</p>
+            <p>La réserve est un lieu idéal pour ceux qui souhaitent découvrir la faune africaine et en apprendre
+                davantage sur les efforts de conservation de la région. C'est un endroit précieux pour la préservation
+                de l'écosystème local et la protection de la biodiversité.</p>
+            <p>N'attendez plus ! Venez nous rendre visite en choisissant le <span id="safari-choice"
+                    onclick="redirectToSafarisPage()">safari</span> qui
+                vous dépaysera et vous plongera au cœur de la magnificence animale !</p>
+        </section>
+
+        <section id="footer-swiper">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="assets/img/monptitbuffle.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/img/panth.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/img/paon.jpeg" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/img/pie.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/img/pexels-photo-1320440.jpeg" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/img/safari-4043090_960_720.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/img/safari4.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/img/tigre.jpeg" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/img/reptiles.jpeg" alt=""></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <ul class="footer-menu">
+            <li><a href="#">Mentions Légales</a></li>
+            <li><a href="contact.html">Contactez-nous</a></li>
+            <li><a href="#">Les avis de nos aventuriers</a></li>
+            <li><i class="fa-brands fa-tiktok"></i></li>
+            <li><i class="fa-brands fa-instagram"></i></li>
+            <li><i class="fa-brands fa-facebook-f"></i></li>
+        </ul>
+        <p>Copyright ©2023 Wildlands. Tous droits réservés.</p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/8e8be6f461.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="assets/js/home.js"></script>
+</body>
+
+
+</html>

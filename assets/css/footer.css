@@ -1,0 +1,51 @@
+@font-face {
+    font-family: "Amatic SC";
+    src: url("../fonts/Amatic\ SC/AmaticSC-Regular.ttf");
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    margin-top: 30px;
+    height: 15vh;
+    font-family: "Amatic SC", cursive;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: peru;
+}
+
+footer .footer-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    list-style: none;
+    padding: 0;
+}
+
+footer .footer-menu li a, footer .footer-menu li i {
+    padding: 0 1rem;
+    color: peru;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+footer .footer-menu li:not(:last-child) {
+    padding-right: 50px;
+}
+
+footer .footer-menu a:hover, footer .footer-menu li i:hover {
+    color: #7A9D54;
+}
+
+footer p {
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 1rem;
+}

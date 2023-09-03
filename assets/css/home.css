@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+#presentation {
+    width: 60%;
+    margin: 30px auto 60px;
+    color: #fff;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+}
+
+#discover-species {
+    display: block;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background: #7A9D54;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+
+    margin: 20px auto 40px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+#discover-species:hover {
+    background: peru;
+}
+
+#safari-choice {
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #7A9D54;
+}
+
+.swiper {
+    width: 100%;
+    height: 70vh;
+    margin: 30px 0;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
