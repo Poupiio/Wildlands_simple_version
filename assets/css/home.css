@@ -14,7 +14,7 @@
     cursor: pointer;
     border: none;
     border-radius: 10px;
-    background: #96A586;
+    background: #72885a;
     color: white;
     font-weight: bold;
     font-size: 1.2rem;
@@ -33,7 +33,7 @@
 #safari-choice {
     cursor: pointer;
     font-size: 1.5rem;
-    color: #96A586;
+    color: #72885a;
 }
 
 .swiper {

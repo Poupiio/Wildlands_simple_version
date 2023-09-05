@@ -1,7 +1,7 @@
 :root {
     --menu: #D17343;
     --icons: #F7D214;
-    --hover: #94B076;
+    --hover: #72885a;
 }
 
 @font-face {
@@ -20,6 +20,10 @@ header {
     overflow: hidden;
 
     color: var(--menu);
+    background-image: url("../img/banner.jpg");
+    background-position: 50% 30%;
+    background-size: cover;
+    
 }
 
 header .logoContainer {
@@ -32,6 +36,16 @@ header .logoContainer img {
     width: 100%;
     height: auto;
     cursor: pointer;
+}
+
+nav.hidden-menu {
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+
+.visible-menu {
+    opacity: 1;
+    transition: opacity 0.8s ease-in-out;
 }
 
 nav {

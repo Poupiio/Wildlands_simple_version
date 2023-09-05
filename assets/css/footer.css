@@ -1,7 +1,8 @@
 :root {
-    --menu: #D17343;
-    --hover: #94B076;
-    --copyright: #fff;
+    --menu: #F7D214;
+    --hover: #72885a;
+    --white: #fff;
+    --footer: #C08261;
 }
 
 @font-face {
@@ -22,7 +23,7 @@ footer {
     font-size: 1.5rem;
     font-weight: bold;
     text-transform: uppercase;
-    color: var(--menu);
+    background: var(--footer);
 }
 
 footer .footer-menu {
@@ -52,7 +53,7 @@ footer .footer-menu li:hover {
 }
 
 footer p {
-    color: var(--copyright);
+    color: var(--white);
     text-align: center;
     margin-top: 15px;
     font-size: 1rem;
