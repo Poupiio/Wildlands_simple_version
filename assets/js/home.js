@@ -6,12 +6,10 @@ const menu = document.querySelector('.hidden-menu');
 console.log(menu);
 
 header.addEventListener('mouseenter', () => {
-    console.log("je rentre");
     menu.classList.remove('hidden-menu');
     menu.classList.add('visible-menu');
 })
 header.addEventListener('mouseleave', () => {
-    console.log("je sors");
     menu.classList.add('hidden-menu');
 })
 
