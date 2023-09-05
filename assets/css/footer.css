@@ -1,3 +1,9 @@
+:root {
+    --menu: #D17343;
+    --hover: #94B076;
+    --copyright: #fff;
+}
+
 @font-face {
     font-family: "Amatic SC";
     src: url("../fonts/Amatic\ SC/AmaticSC-Regular.ttf");
@@ -16,21 +22,18 @@ footer {
     font-size: 1.5rem;
     font-weight: bold;
     text-transform: uppercase;
-    color: peru;
+    color: var(--menu);
 }
 
 footer .footer-menu {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
-    list-style: none;
-    padding: 0;
 }
 
 footer .footer-menu li a, footer .footer-menu li i {
     padding: 0 1rem;
-    color: peru;
+    color: var(--menu);
     transition: 0.3s ease-in-out;
     cursor: pointer;
 }
@@ -40,11 +43,16 @@ footer .footer-menu li:not(:last-child) {
 }
 
 footer .footer-menu a:hover, footer .footer-menu li i:hover {
-    color: #7A9D54;
+    color: var(--hover);
+}
+
+footer .footer-menu li:hover {
+    transform: scale(1.3);
+    transition: transform 0.3s ease-in-out;
 }
 
 footer p {
-    color: #fff;
+    color: var(--copyright);
     text-align: center;
     margin-top: 15px;
     font-size: 1rem;

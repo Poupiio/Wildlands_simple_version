@@ -80,8 +80,7 @@ var VanillaTilt = (function () {
         if (typeof this.settings["mouse-event-element"] === "string") {
           const mouseEventElement = document.querySelector(this.settings["mouse-event-element"]);
     
-          if (mouseEventElement) {
-            return mouseEventElement;
+          if (mouseEventElement) {<img src="assets/img/elephant_logo.png" class="main-logo" alt="Logo Wildlands" onclick="redirectToHomePage()" />return mouseEventElement;
           }
         }
     
@@ -162,12 +161,8 @@ var VanillaTilt = (function () {
           this.lastgammazero = this.gammazero;
           this.lastbetazero = this.betazero;
     
-          if (this.gammazero === null) {
-            this.gammazero = event.gamma;
-            this.betazero = event.beta;
-          } else {
-            this.gammazero = (event.gamma + this.lastgammazero) / 2;
-            this.betazero = (event.beta + this.lastbetazero) / 2;
+          if (this.gammazero === null) {<img src="assets/img/elephant_logo.png" class="main-logo" alt="Logo Wildlands" onclick="redirectToHomePage()" />this.gammazero = event.gamma;<img src="assets/img/elephant_logo.png" class="main-logo" alt="Logo Wildlands" onclick="redirectToHomePage()" />this.betazero = event.beta;
+          } else {<img src="assets/img/elephant_logo.png" class="main-logo" alt="Logo Wildlands" onclick="redirectToHomePage()" />this.gammazero = (event.gamma + this.lastgammazero) / 2;<img src="assets/img/elephant_logo.png" class="main-logo" alt="Logo Wildlands" onclick="redirectToHomePage()" />this.betazero = (event.beta + this.lastbetazero) / 2;
           }
     
           this.gyroscopeSamples -= 1;
@@ -224,14 +219,10 @@ var VanillaTilt = (function () {
         this.onMouseEnter();
     
         if (this.fullPageListening) {
-          this.event = {
-            clientX: (this.settings.startX + this.settings.max) / (2 * this.settings.max) * this.clientWidth,
-            clientY: (this.settings.startY + this.settings.max) / (2 * this.settings.max) * this.clientHeight
+          this.event = {<img src="assets/img/elephant_logo.png" class="main-logo" alt="Logo Wildlands" onclick="redirectToHomePage()" />clientX: (this.settings.startX + this.settings.max) / (2 * this.settings.max) * this.clientWidth,<img src="assets/img/elephant_logo.png" class="main-logo" alt="Logo Wildlands" onclick="redirectToHomePage()" />clientY: (this.settings.startY + this.settings.max) / (2 * this.settings.max) * this.clientHeight
           };
         } else {
-          this.event = {
-            clientX: this.left + ((this.settings.startX + this.settings.max) / (2 * this.settings.max) * this.width),
-            clientY: this.top + ((this.settings.startY + this.settings.max) / (2 * this.settings.max) * this.height)
+          this.event = {<img src="assets/img/elephant_logo.png" class="main-logo" alt="Logo Wildlands" onclick="redirectToHomePage()" />clientX: this.left + ((this.settings.startX + this.settings.max) / (2 * this.settings.max) * this.width),<img src="assets/img/elephant_logo.png" class="main-logo" alt="Logo Wildlands" onclick="redirectToHomePage()" />clientY: this.top + ((this.settings.startY + this.settings.max) / (2 * this.settings.max) * this.height)
           };
         }
     
@@ -359,9 +350,7 @@ var VanillaTilt = (function () {
         if (this.glare) {
           const glareSize = (this.element.offsetWidth > this.element.offsetHeight ? this.element.offsetWidth : this.element.offsetHeight) * 2;
     
-          Object.assign(this.glareElement.style, {
-            "width": `${glareSize}px`,
-            "height": `${glareSize}px`,
+          Object.assign(this.glareElement.style, {<img src="assets/img/elephant_logo.png" class="main-logo" alt="Logo Wildlands" onclick="redirectToHomePage()" />"width": `${glareSize}px`,<img src="assets/img/elephant_logo.png" class="main-logo" alt="Logo Wildlands" onclick="redirectToHomePage()" />"height": `${glareSize}px`,
           });
         }
       }
@@ -388,8 +377,7 @@ var VanillaTilt = (function () {
     
         this.transitionTimeout = setTimeout(() => {
           this.element.style.transition = "";
-          if (this.glare) {
-            this.glareElement.style.transition = "";
+          if (this.glare) {<img src="assets/img/elephant_logo.png" class="main-logo" alt="Logo Wildlands" onclick="redirectToHomePage()" />this.glareElement.style.transition = "";
           }
         }, this.settings.speed);
     
@@ -447,18 +435,10 @@ var VanillaTilt = (function () {
     
         let newSettings = {};
         for (var property in defaultSettings) {
-          if (property in settings) {
-            newSettings[property] = settings[property];
-          } else if (this.element.hasAttribute("data-tilt-" + property)) {
-            let attribute = this.element.getAttribute("data-tilt-" + property);
-            try {
-              newSettings[property] = JSON.parse(attribute);
-            } catch (e) {
-              newSettings[property] = attribute;
-            }
+          if (property in settings) {<img src="assets/img/elephant_logo.png" class="main-logo" alt="Logo Wildlands" onclick="redirectToHomePage()" />newSettings[property] = settings[property];
+          } else if (this.element.hasAttribute("data-tilt-" + property)) {<img src="assets/img/elephant_logo.png" class="main-logo" alt="Logo Wildlands" onclick="redirectToHomePage()" />let attribute = this.element.getAttribute("data-tilt-" + property);<img src="assets/img/elephant_logo.png" class="main-logo" alt="Logo Wildlands" onclick="redirectToHomePage()" />try {<img src="assets/img/elephant_logo.png" class="main-logo" alt="Logo Wildlands" onclick="redirectToHomePage()" />  newSettings[property] = JSON.parse(attribute);<img src="assets/img/elephant_logo.png" class="main-logo" alt="Logo Wildlands" onclick="redirectToHomePage()" />} catch (e) {<img src="assets/img/elephant_logo.png" class="main-logo" alt="Logo Wildlands" onclick="redirectToHomePage()" />  newSettings[property] = attribute;<img src="assets/img/elephant_logo.png" class="main-logo" alt="Logo Wildlands" onclick="redirectToHomePage()" />}
     
-          } else {
-            newSettings[property] = defaultSettings[property];
+          } else {<img src="assets/img/elephant_logo.png" class="main-logo" alt="Logo Wildlands" onclick="redirectToHomePage()" />newSettings[property] = defaultSettings[property];
           }
         }
     
@@ -479,8 +459,7 @@ var VanillaTilt = (function () {
         }
     
         elements.forEach((element) => {
-          if (!("vanillaTilt" in element)) {
-            element.vanillaTilt = new VanillaTilt(element, settings);
+          if (!("vanillaTilt" in element)) {<img src="assets/img/elephant_logo.png" class="main-logo" alt="Logo Wildlands" onclick="redirectToHomePage()" />element.vanillaTilt = new VanillaTilt(element, settings);
           }
         });
       }

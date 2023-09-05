@@ -14,7 +14,7 @@
     cursor: pointer;
     border: none;
     border-radius: 10px;
-    background: #7A9D54;
+    background: #96A586;
     color: white;
     font-weight: bold;
     font-size: 1.2rem;
@@ -27,13 +27,13 @@
 }
 
 #discover-species:hover {
-    background: peru;
+    background: #C08261;
 }
 
 #safari-choice {
     cursor: pointer;
     font-size: 1.5rem;
-    color: #7A9D54;
+    color: #96A586;
 }
 
 .swiper {
