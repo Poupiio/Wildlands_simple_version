@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion - Wildlands</title>
+    <link rel="shortcut icon" href="assets/img/1.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <header>
+        <div class="logoContainer">
+            <img src="assets/img/logo (2).png" class="main-logo" alt="Logo Wildlands" onclick="redirectToHomePage()" />
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <i class="fa-solid fa-house"></i>
+                    <a href="index.html">Accueil</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-truck-pickup"></i>
+                    <a href="safaris.html">Safaris</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-paw"></i>
+                    <a href="species.html">Faune</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-image"></i>
+                    <a href="gallery.html">Galerie</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="contact.html">Contact</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-user"></i>
+                    <a href="login.html">Connexion</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>Connectez-vous</h2>
+            <form action="" class="contact-form">
+                <input type="email" name="email" id="email" placeholder="Votre email" required>
+                <input type="password" name="password" id="password" placeholder="Votre mot de passe" required>
+                <input type="submit" value="Connexion">
+                <p>Mot de passe oublié</p>
+                <p>Pas encore de compte ?</p>
+                <a href="#">Inscrivez-vous</a>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <ul class="footer-menu">
+            <li><a href="#">Mentions Légales</a></li>
+            <li><a href="contact.html">Contactez-nous</a></li>
+            <li><a href="#">Les avis de nos aventuriers</a></li>
+            <li><i class="fa-brands fa-tiktok"></i></li>
+            <li><i class="fa-brands fa-instagram"></i></li>
+            <li><i class="fa-brands fa-facebook-f"></i></li>
+        </ul>
+        <p>Copyright ©2023 Wildlands. Tous droits réservés.</p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/8e8be6f461.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="assets/js/home.js"></script>
+</body>
+</html>

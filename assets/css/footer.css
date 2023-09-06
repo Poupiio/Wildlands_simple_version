@@ -2,7 +2,6 @@
     --menu: #F7D214;
     --hover: #72885a;
     --white: #fff;
-    --footer: #C08261;
 }
 
 @font-face {
@@ -24,6 +23,7 @@ footer {
     font-weight: bold;
     text-transform: uppercase;
     background: var(--footer);
+    box-shadow: 1px -1px 8px #F7D214;
 }
 
 footer .footer-menu {
