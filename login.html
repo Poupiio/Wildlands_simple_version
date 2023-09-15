@@ -60,12 +60,12 @@
                         
                     </div>
                     <div class="form-input">
-                        <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                        <span class="icon"><i class="fa-solid fa-lock" id="togglePassword"></i></span>
                         <input type="password" name="password" id="password" placeholder="Mot de passe" required>
                     </div>
                     <button type="submit">Connexion</button>
                 </form>
-                <a href="#">Mot de passe oublié</a>
+                <a href="forgotten-pwd.html">Mot de passe oublié</a>
             </div>
         </div>
     </main>
@@ -85,5 +85,19 @@
     <script src="https://kit.fontawesome.com/8e8be6f461.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="assets/js/home.js"></script>
+
+    <script>
+        const togglePasswordButton = document.querySelector("#togglePassword");
+        const passwordInput = document.querySelector("#password");
+
+        togglePasswordButton.addEventListener("click", () => {
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+            } else {
+                passwordInput.type = "password";
+            }
+        });
+    </script>
+
 </body>
 </html>

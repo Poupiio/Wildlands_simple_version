@@ -1,11 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mot de passe oublié - Wildlands</title>
+    <title>Réinitialisation mot de passe - Wildlands</title>
+    <link rel="shortcut icon" href="assets/img/1.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/password.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 </head>
+
 <body>
-    
+    <header>
+        <div class="logoContainer">
+            <img src="assets/img/logo (2).png" class="main-logo" alt="Logo Wildlands" onclick="redirectToHomePage()" />
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <i class="fa-solid fa-house"></i>
+                    <a href="index.html">Accueil</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-truck-pickup"></i>
+                    <a href="safaris.html">Safaris</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-paw"></i>
+                    <a href="species.html">Faune</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-image"></i>
+                    <a href="gallery.html">Galerie</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="contact.html">Contact</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-user"></i>
+                    <a href="login.html">Connexion</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="form-container">
+                <h2>Mot de passe oublié</h2>
+                <form action="">
+                    <div class="form-input">
+                        <span class="icon"><i class="fa-solid fa-user"></i></span>
+                        <label for="email">Votre adresse email</label>
+                        <input type="email" name="email" id="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-input">
+                        <span class="icon togglePassword"><i class="fa-solid fa-lock"></i></span>
+                        <label for="new-pwd">Votre nouveau mot de passe</label>
+                        <input type="password" name="new-pwd" id="new-pwd" placeholder="Nouveau mot de passe" class="new-pwd" required>
+                    </div>
+
+                    <div class="form-input">
+                        <span class="icon togglePassword"><i class="fa-solid fa-lock"></i></span>
+                        <label for="confirm-new-pwd">Confirmez votre mot de passe</label>
+                        <input type="password" name="confirm-new-pwd" id="confirm-new-pwd" placeholder="Confirmation" class="new-pwd" required>
+                    </div>
+                    <button type="submit">Réinitialiser</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <ul class="footer-menu">
+            <li><a href="#">Mentions Légales</a></li>
+            <li><a href="contact.html">Contactez-nous</a></li>
+            <li><a href="#">Les avis de nos aventuriers</a></li>
+            <li><i class="fa-brands fa-tiktok"></i></li>
+            <li><i class="fa-brands fa-instagram"></i></li>
+            <li><i class="fa-brands fa-facebook-f"></i></li>
+        </ul>
+        <p>Copyright ©2023 Wildlands. Tous droits réservés.</p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/8e8be6f461.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="assets/js/home.js"></script>
+
+    <script>
+        const togglePasswordIcons = document.querySelectorAll(".togglePassword");
+
+        togglePasswordIcons.forEach((icon) => {
+            icon.addEventListener("click", () => {
+                // Trouvez l'input associé en utilisant l'attribut for du label
+                const inputId = icon.getAttribute("for");
+                const input = document.getElementById(inputId);
+
+                // Basculer entre les types d'input password et text
+                if (input.type === "password") {
+                    input.type = "text"; // Affiche le mot de passe
+                } else {
+                    input.type = "password"; // Masque le mot de passe
+                }
+            });
+        });
+    </script>
 </body>
 </html>
