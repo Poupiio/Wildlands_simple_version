@@ -39,15 +39,39 @@ body {
 
 .form-container h2 {
     text-align: center;
-    margin-top: 20px;
+    margin: 20px 0;
     font-family: "Bree Serif", serif;
     position: relative;
 }
 
-.form-container input {
+.form-input {
+    margin: 10px auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    border: 2px solid #eee;
+    padding: 5px 10px;
+    font-size: 1rem;
+    outline: 0;
     display: block;
-    margin: 15px auto;
-    font-family: "Bree Serif", serif;
+    width: 40%;
+    padding-left: 40px;
+}
+
+.icon {
+    position: absolute;
+    left: 150px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 15px;
+    color: #D17343;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .form-container button[type="submit"] {
