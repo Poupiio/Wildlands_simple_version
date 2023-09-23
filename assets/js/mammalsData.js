@@ -46,7 +46,10 @@ const cards = document.querySelectorAll('.card');
 cards.forEach((card, index) => {
     if (index < mammalsData.length) {
         const title = mammalsData[index].title;
+        const content = mammalsData[index].content;
         const h2 = card.querySelector('h2');
+        const p = card.querySelector('p');
         h2.textContent = title;
+        p.textContent = content;
     }
 });
