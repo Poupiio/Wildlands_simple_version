@@ -21,43 +21,20 @@ h1, h2 {
     font-family: 'Bree Serif', serif;
 }
 
-.card-container {
-    border: solid 2px white;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    min-height: 100vh;
-    margin: 20px auto;
-    width: 95%;
-}
-
-.card {
+.myCard {
+    font-family: 'Poppins', sans-serif;
     width: 30%;
-    height: 30%;
-    border: solid 1px red;
+    margin: 0 auto 20px;
+    padding: 0;
+    border: none;
 }
 
-.card::after {
-    content: "";
-    display: block;
-    clear: both;
+.myCard .title {
+    font-size: 1.8rem;
 }
 
-.card img {
-    width: 200px;
+.myCard .cardImage {
+    width: 100%;
     height: 200px;
     object-fit: cover;
-    border-radius: 50%;
-    float: left;
-    shape-outside: margin-box;
-    margin: 0 20px 5px 0;
 }
-
-.card p {
-    color: #fff;
-    font-family: 'Poppins', sans-serif;
-    padding: 5px;
-    line-height: 1.4;
-}
-
