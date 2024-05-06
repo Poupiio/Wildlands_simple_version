@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
 
+@font-face {
+    font-family: "Amatic SC";
+    src: url("../fonts/Amatic\ SC/AmaticSC-Regular.ttf");
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,38 +14,45 @@
 }
 
 body {
-    background: #000;
     min-height: 100vh;
 }
 
-#banner {
-    margin-top: 3px;
-	background-image: url("../img/banner.jpg");
-	background-size: cover;
-    background-position-y: bottom;
-	height: 70vh;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-
-    text-align: center;
+/* NAV BAR */
+.main-menu {
+    box-shadow: 0px 10px 6px -9px #f4cf174c;
+    margin-bottom: 40px;
 }
 
-#banner h1 {
-    color: #fff;
+.main-menu .menu-link a {
+    color: #D17343;
+    font-size: 1.5rem;
     text-transform: uppercase;
-    margin-bottom: 15px;
-    font-size: 2.3rem;
-    font-family: 'Bree Serif', serif;
+    font-weight: 600;
+    font-family: "Amatic SC", cursive;
 }
 
-#banner span#title {
-    color: #94B076;
+.main-menu .menu-link a::after {
+    content: "";
+    display: block;
+    background-color: #F4D017;
+    width: 0;
+    height: 3px;
+    margin: 0 auto;
+    transition: all 0.3s ease;
 }
 
-#banner .paw-banner {
-    font-size: 1.8rem;
-    rotate: 45deg;
+.main-menu .menu-link a:hover::after {
+    content: "";
+    display: block;
+    background-color: #F4D017;
+    width: 100%;
+    height: 3px;
+    margin: 0 auto;
 }
+
+.main-menu .menu-link i {
+    color: #F4D017;
+}
+
+
+/* BANNER */

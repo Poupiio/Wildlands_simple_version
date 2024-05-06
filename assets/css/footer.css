@@ -1,4 +1,4 @@
-:root {
+/* :root {
     --menu: #F7D214;
     --hover: #72885a;
     --white: #fff;
@@ -16,7 +16,7 @@ footer {
     align-items: center;
     text-align: center;
 
-    margin: 0 auto;
+    margin: 50px auto 0;
     height: 15vh;
     font-family: "Amatic SC", cursive;
     font-size: 1.5rem;
@@ -56,4 +56,4 @@ footer p {
     text-align: center;
     margin-top: 15px;
     font-size: 1rem;
-}
+} */

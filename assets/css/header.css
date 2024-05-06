@@ -1,8 +1,8 @@
+/* 
 @font-face {
     font-family: "Amatic SC";
     src: url("../fonts/Amatic\ SC/AmaticSC-Regular.ttf");
 }
-
 header {
     display: flex;
     justify-content: center;
@@ -69,4 +69,4 @@ nav ul li:hover {
 nav ul li a:hover {
     color: #94B076;
     transition: 0.3s ease-in-out;
-}
+} */
