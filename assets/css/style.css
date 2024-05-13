@@ -20,7 +20,8 @@ body {
 
 /* NAV BAR */
 .main-menu {
-    background-color: #72885a;
+    /* background-color: #72885a; */
+    background-color: #154030;
 }
 
 .main-menu .menu-link a {
@@ -56,10 +57,55 @@ body {
 
 
 /* BANNER */
-#banner {
-    border: solid 1px red;
+.banner {
+    background-image: url("../img/banner.jpg");
+    background-position: bottom center;
+    background-size: cover;
+    height: 60vh;
+    position: relative;
 }
 
-h1 {
+.title {
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 5rem;
+    width: 100%;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
+    color: rgba(255, 255, 255, 0.95);
+    z-index: 10;
+}
+
+
+/* PRESENTATION */
+#presentation {
+    background-color: #154030;
+}
+
+.presentation-img-container {
+    border-radius: 44% 56% 70% 30% / 37% 44% 56% 63%;
+    background-image: url("../img/landscape.jpeg");
+    background-position: center;
+    background-position: center;
+}
+
+.description-container {
+    color: rgba(255, 255, 255, 0.95);
+    text-align: right;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+}
+
+#species-redirection, #safari-choice {
+    cursor: pointer;
+    color: #F4D017;
+    font-weight: 700;
+    transition: 0.3s ease-in-out;
+}
+
+#species-redirection:hover, #safari-choice:hover {
+    color: #154030;
 }

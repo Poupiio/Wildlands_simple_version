@@ -63,28 +63,23 @@
     </header>
 
     <main>
-        <div class="container-fluid">
-            <img src="assets/img/banner.jpg" class="img-fluid" alt="Bannière">
-            <h1>Bienvenue dans la réserve <span id="title">Wildlands</span> <i class="fa-solid fa-paw paw-banner"></i>
+        <div class="container-fluid p-0 banner">
+            <!-- <img src="assets/img/banner.jpg" class="img-fluid" width="100%" alt="Bannière"> -->
+            <h1 class="title">Wildlands, une réserve naturelle préservée <i class="fa-solid fa-paw paw-banner"></i>
             </h1>
         </div>
 
-        <section id="presentation">
-            <p>Située en Afrique du Sud, en plein cœur de la savane, la réserver Wildlands est connue pour
-                abriter les "Big Five" de l'Afrique, c'est-à-dire le lion, l'éléphant, le rhinocéros, le buffle et le
-                léopard. La réserve est également habitée par de nombreuses autres espèces animales, comme les girafes,
-                les antilopes, les hyènes et les crocodiles.</p>
-            <button id="discover-species" onclick="redirectToSpeciesPage()">Les découvrir</button>
-            <p>Venez explorer la réserve en 4x4, en compagnie de guides locaux expérimentés qui connaissent bien
-                les animaux et leur habitat. Participez également à des programmes de conservation et de
-                recherche menés par des scientifiques professionnels.</p>
-            <p>La réserve est un lieu idéal pour ceux qui souhaitent découvrir la faune africaine et en apprendre
-                davantage sur les efforts de conservation de la région. C'est un endroit précieux pour la préservation
-                de l'écosystème local et la protection de la biodiversité.</p>
-            <p>N'attendez plus ! Venez nous rendre visite en choisissant le <span id="safari-choice"
-                    onclick="redirectToSafarisPage()">safari</span> qui
-                vous dépaysera et vous plongera au cœur de la magnificence animale !</p>
-        </section>
+        <div id="presentation" class="container-fluid">
+            <div class="row p-4">
+                <div class="col-5 presentation-img-container"></div>
+                <div class="col-6 description-container">
+                    <p>Située en Afrique du Sud, en plein cœur de la savane, la réserver Wildlands est connue pour abriter les "Big Five" de l'Afrique, c'est-à-dire le lion, l'éléphant, le rhinocéros, le buffle et le léopard. La réserve est également habitée par de nombreuses autres <span id="species-redirection">espèces</span> animales, comme les girafes, les antilopes, les hyènes et les crocodiles.</p>
+                    <p>Venez explorer la réserve en 4x4, en compagnie de guides locaux expérimentés qui connaissent bien les animaux et leur habitat. Participez également à des programmes de conservation et de recherche menés par des scientifiques professionnels.</p>
+                    <p>La réserve est un lieu idéal pour ceux qui souhaitent découvrir la faune africaine et en apprendre davantage sur les efforts de conservation de la région. C'est un endroit précieux pour la préservation de l'écosystème local et la protection de la biodiversité.</p>
+                    <p>N'attendez plus ! Venez nous rendre visite en choisissant le <span id="safari-choice">safari</span> qui vous dépaysera et vous plongera au cœur de la magnificence animale !</p>
+                </div>
+            </div>
+        </div>
 
         <section id="footer-swiper">
             <div class="swiper mySwiper">
